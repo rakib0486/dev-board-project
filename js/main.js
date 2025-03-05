@@ -38,5 +38,5 @@ for (const box of boxList) {
 
 const blogSection = document.getElementById("blog-id");
 blogSection.addEventListener("click", function () {
-  window.location.href = "blog.html";
+  window.location.href = "blogs.html";
 });

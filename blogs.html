@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-poppins bg-blue-50">
+    <header class="w-11/12 mx-auto p-4">
+        <nav class="rounded-lg py-4 px-6 flex justify-between items-center bg-white">
+            <div class="flex items-center gap-2">
+                <img class="size-10" src="./assets/logo.png" alt="logo" />
+                <h1 class="text-3xl font-light">
+                    Dev<span class="text-3xl font-bold">Board</span>
+                </h1>
+            </div>
+            <button id="back-btn" class="text-white text-xl ont-medium px-5 py-3 bg-blue-600 rounded-lg">Back to
+                Desk</button>
+        </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto p-4">
+        <h1 class="text-center font-bold text-3xl mb-5">Blogs</h1>
+        <section>
+            <div class="bg-white p-5 mb-5">
+                <h2 class="font-bold text-xl mb-5">Question-1: What are the different ways to select an element in the
+                    DOM ?
+                </h2>
+                <hr class="border-dotted">
+                <p class="mt-5 text-gray-500 text-2xl">There are many ways to select an element in the DOM. We
+                    can use
+                    getElementsByTagName (To select elements by tag name), getElementsByClassName (To select elements by
+                    class name), getElementById (To select a single element by an id), querySelector (To select the
+                    first child of an element) and querySelectorAll (To select the elements by using both the class and
+                    id). </p>
+            </div>
+            <div class="bg-white p-5 mb-5">
+                <h2 class="font-bold text-xl mb-5">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?
+                </h2>
+                <hr class="border-dotted">
+                <p class="mt-5 text-gray-500 text-2xl">The innerHTML contains all the HTML structure of an element. The
+                    innerText contains only the plain text of an element but textContent contains text along with any
+                    hidden text. </p>
+            </div>
+            <div class="bg-white p-5 mb-5">
+                <h2 class="font-bold text-xl mb-5">Question-3: What is event delegation in the DOM ?
+                </h2>
+                <hr class="border-dotted">
+                <p class="mt-5 text-gray-500 text-2xl">Event delegation is used to handle many child elements by
+                    targeting only one element at a time. </p>
+            </div>
+            <div class="bg-white p-5 mb-5">
+                <h2 class="font-bold text-xl mb-5">Question-4: What is event bubbling in the DOM ?
+                </h2>
+                <hr class="border-dotted">
+                <p class="mt-5 text-gray-500 text-2xl">Event bubbling is a process where events travels into elements by
+                    propagating in a reverse way to their parent elements. </p>
+            </div>
+            <div class="bg-white p-5 mb-5">
+                <h2 class="font-bold text-xl mb-5">Question-5: How do you create, add, and remove elements using
+                    JavaScript ?
+                </h2>
+                <hr class="border-dotted">
+                <p class="mt-5 text-gray-500 text-2xl">We can create elements by using document.createElement()
+                    property, add elements by using document.append() property and remove elements by using
+                    document.remove() property. </p>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('back-btn')
+            .addEventListener('click', function () {
+                window.location.href = "index.html";
+            })
+    </script>
+</body>
